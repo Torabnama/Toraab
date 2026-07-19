@@ -8,11 +8,12 @@
 
 <title>در انتظار | گروه هنری نمایشی تراب</title>
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body class="show-page">
@@ -67,7 +68,7 @@
 
 <div class="info-card">
 <span>مدت اجرا</span>
-<span>۱۱۰ دقیقه</span>
+<span>۱۲۰ دقیقه</span>
 </div>
 
 <div class="info-card">
@@ -85,18 +86,26 @@
 </span>
 </div>
 </section>
-
 <section class="show-section">
 
 <h2>گالری تصاویر</h2>
 
-<div class="gallery-scroll">
+<div class="swiper gallerySwiper">
 
-<img src="gallery/1.jpg" alt="">
-<img src="gallery/2.jpg" alt="">
-<img src="gallery/3.jpg" alt="">
-<img src="gallery/4.jpg" alt="">
-<img src="gallery/5.jpg" alt="">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide"><img src="entezarg1.jpg"></div>
+        <div class="swiper-slide"><img src="entezarg2.jpg"></div>
+        <div class="swiper-slide"><img src="entezarg3.jpg"></div>
+        <div class="swiper-slide"><img src="entezarg4.jpg"></div>
+        <div class="swiper-slide"><img src="entezarg5.jpg"></div>
+        <div class="swiper-slide"><img src="entezarg6.jpg"></div>
+        <div class="swiper-slide"><img src="entezarg7.jpg"></div>
+        <div class="swiper-slide"><img src="entezarg8.jpg"></div>
+
+    </div>
+
+    <div class="swiper-pagination gallery-pagination"></div>
 
 </div>
 
@@ -253,6 +262,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
