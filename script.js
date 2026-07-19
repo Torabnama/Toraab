@@ -83,3 +83,20 @@ if(poster){
 
 }
 
+const gallerySwiper = new Swiper(".gallerySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    loop: true,
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: ".gallery-pagination",
+        clickable: true,
+    },
+
+    speed: 700,
+});
