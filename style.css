@@ -44,6 +44,108 @@ img {
     border-radius: 24px;
 }
 
+.featured-card{
+
+    background:#151515;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.45);
+
+}
+
+.featured-content{
+
+    padding:25px;
+
+}
+
+.featured-status{
+
+    display:inline-block;
+
+    padding:7px 14px;
+
+    border-radius:999px;
+
+    background:#204b2c;
+
+    color:#8de0a4;
+
+    font-size:13px;
+
+    margin-bottom:15px;
+
+}
+
+.featured-content h3{
+
+    font-size:30px;
+
+    color:#d6b14d;
+
+    margin-bottom:12px;
+
+}
+
+.featured-content p{
+
+    color:#ddd;
+
+    line-height:2;
+
+    margin-bottom:20px;
+
+}
+
+.featured-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    color:#cfcfcf;
+
+    margin-bottom:25px;
+
+}
+
+.featured-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.featured-buttons a{
+
+    flex:1;
+
+}
+
+.ticket-btn{
+
+    background:#d6b14d;
+
+    color:#111;
+
+    border-radius:999px;
+
+    text-align:center;
+
+    padding:12px;
+
+    text-decoration:none;
+
+    font-weight:800;
+width:100%;
+display:block;
+}
 /* اسلایدر */
 
 .mySwiper{
@@ -402,6 +504,11 @@ img {
 
 }
 
+.address{
+    direction:ltr;
+    text-align:left;
+    unicode-bidi:plaintext;
+}
 /*=====================================
           گالری تصاویر
 ======================================*/
@@ -428,30 +535,43 @@ img {
 
 }
 
-.gallery-scroll img{
-
-    width:210px;
-
-    height:280px;
-
-    border-radius:22px;
-
-    object-fit:cover;
-
-    flex-shrink:0;
-
-    scroll-snap-align:center;
-
-    transition:.35s;
-
-}
-
 .gallery-scroll img:hover{
 
     transform:scale(1.03);
 
 }
 
+.gallery-landscape img{
+    width: 320px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 22px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}
+
+.gallerySwiper {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.gallerySwiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.gallerySwiper img {
+    width: 100%;
+    max-width: 420px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+.gallery-pagination {
+    margin-top: 18px;
+    text-align: center;
+}
 /*=====================================
   آن‌ها که این روایت را جان بخشیدند
 ======================================*/
