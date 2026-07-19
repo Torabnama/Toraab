@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 const swiper = new Swiper(".mySwiper", {
     direction: "horizontal",
     loop: true,
@@ -164,4 +165,6 @@ const gallerySwiper = new Swiper(".gallerySwiper", {
     },
 
     speed: 700,
+});
+
 });
