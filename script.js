@@ -18,8 +18,6 @@ const swiper = new Swiper(".mySwiper", {
     },
     
     speed: 700,
-    
-    rtl: true,
 });
 
 
